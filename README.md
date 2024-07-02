@@ -32,9 +32,9 @@ To run the application locally:
    ```bash
    git clone https://github.com/your-username/your-repo.git
 2. Install dependencies:
-   ```npm install
+   npm install
 3. Start the development server:
-   ```npm start
+   npm start
 
 ## Usage
 
