@@ -30,7 +30,7 @@ To run the application locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Anshuldhakate/DevTools-Clone-TestUnity.git
 2. Install dependencies:
    npm install
 3. Start the development server:
