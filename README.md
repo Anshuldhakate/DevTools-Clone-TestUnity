@@ -5,6 +5,8 @@ This React application allows users to monitor network requests made to specifie
 ## Deployed Link
 https://magical-lokum-aa782c.netlify.app
 
+## Output Video
+https://drive.google.com/file/d/1BBjzyevapV7wgXi5ncF3qK70temQdLTx/view?usp=sharing
 <br/>
 
 
