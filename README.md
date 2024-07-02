@@ -8,6 +8,8 @@ This React application allows users to monitor network requests made to specifie
 <img width="913" alt="Screenshot 2024-07-02 173921" src="https://github.com/Anshuldhakate/DevTools-Clone-TestUnity/assets/123949154/0012beea-2504-42de-8f3e-69443450505d">
 
 <br/>
+
+
 ## Features
 
 - **Enter URL:** Users can enter a URL to fetch details of network requests.
@@ -34,11 +36,11 @@ To run the application locally:
 3. Start the development server:
    ```npm start
 
-##Usage
+## Usage
 
 - Enter a URL in the input field and click Search to fetch details of network requests.
 - Use the filter buttons to view requests of specific types.
 - Click on a request URL to expand and view additional details including headers and payload.
 
-##Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Contributing
+Just to let you know, pull requests are welcome. For major changes, please open an issue first to discuss what you want to change.
