@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography, Collapse, Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const RequestsTable = ({ requests }) => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   const [expandedRequest, setExpandedRequest] = useState(null);
 
   const handleRowClick = (req) => {
@@ -13,7 +18,7 @@ const RequestsTable = ({ requests }) => {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} sx={{ marginBottom: '20px' }}>
       <Table>
         <TableHead>
           <TableRow>
@@ -38,19 +43,17 @@ const RequestsTable = ({ requests }) => {
               </TableRow>
               {expandedRequest === req && (
                 <TableRow>
-                  <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+                  <TableCell colSpan={6} style={{ paddingBottom: 0, paddingTop: 0 }}>
                     <Collapse in={expandedRequest === req} timeout="auto" unmountOnExit>
-                      <Box margin={1}>
+                      <Box margin={1} style={{ backgroundColor: '#f9f9f9', padding: '10px', borderRadius: '5px' }}>
                         <Typography variant="h6" gutterBottom component="div">
                           Details
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                          Headers:
-                          <pre>{JSON.stringify(req.headers, null, 2)}</pre>
+                          <strong>Headers:</strong> <pre>{JSON.stringify(req.headers, null, 2)}</pre>
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                          Payload:
-                          <pre>{JSON.stringify(req.data, null, 2)}</pre>
+                          <strong>Payload:</strong> <pre>{JSON.stringify(req.data, null, 2)}</pre>
                         </Typography>
                       </Box>
                     </Collapse>
