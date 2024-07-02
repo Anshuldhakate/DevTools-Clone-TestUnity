@@ -2,6 +2,9 @@
 
 This React application allows users to monitor network requests made to specified URLs. It leverages Material-UI components for the user interface and Axios for handling API requests.
 
+## Deployed Link
+https://magical-lokum-aa782c.netlify.app
+
 <br/>
 
 
