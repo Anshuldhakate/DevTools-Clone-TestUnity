@@ -28,7 +28,7 @@ const NetworkRequests = () => {
     const startTime = new Date().getTime();
 
     axios
-      .get(`http://localhost:5000/proxy?url=${encodeURIComponent(formattedUrl)}`)
+      .get(`https://networklog-backend.onrender.com/proxy?url=${encodeURIComponent(formattedUrl)}`)
       .then((response) => {
         const endTime = new Date().getTime();
         const duration = endTime - startTime;
@@ -65,7 +65,7 @@ const NetworkRequests = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#212121', // Dark background color
+        backgroundColor: '#212121', 
         minHeight: '100vh',
         color: 'white',
         padding: '20px',
